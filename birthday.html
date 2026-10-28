@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Aanya, Greeting Website | Demonstration by Maity DigiWorks</title><meta name="description" content="A demonstration personalized birthday website with a countdown, message, gallery and surprise.">
+<link rel="icon" href="icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>:root{--bg:#FBF3EE;--fg:#3A2622;--accent:#A9525B;--on:#FBF3EE}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:400 1rem/1.7 'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--fg);overflow-x:hidden}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.1;margin:0}h2{font-size:clamp(2rem,5vw,3rem)}img{max-width:100%}a{color:inherit}
+.demo{background:#171717;color:#F7F5EF;font-size:.8rem;padding:.55rem 1.25rem;display:flex;justify-content:space-between;gap:.5rem 1rem;flex-wrap:wrap}.demo a{text-decoration:underline;text-underline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}.sec{padding:clamp(3rem,8vw,5.5rem) 0}.muted{opacity:.7}
+.btn{display:inline-block;padding:.85rem 1.6rem;border-radius:999px;text-decoration:none;border:1px solid var(--accent);background:var(--accent);color:var(--on);cursor:pointer;font:inherit;font-weight:500;transition:.25s}
+.btn:hover{background:transparent;color:var(--accent)}.btn.ghost{background:transparent;color:var(--accent)}.btn.ghost:hover{background:var(--accent);color:var(--on)}
+.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;opacity:.75;margin:0 0 1rem}.acts{display:flex;gap:.8rem;flex-wrap:wrap}
+.cta{background:#171717;color:#F7F5EF;text-align:center;padding:3.5rem 1.25rem}.cta h2{margin-bottom:.6rem}.cta p{opacity:.8;margin:0 0 1.5rem}.cta .btn{--accent:#F7F5EF;--on:#171717}
+.js .rv{opacity:0;transform:translateY(12px);transition:opacity .7s,transform .7s}.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}.js .rv{opacity:1;transform:none}}
+:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.hero{text-align:center;padding:clamp(4rem,12vw,8rem) 1.25rem;background:#3A2622;color:#FBF3EE;border-bottom:3px double #D8B88A;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(3.2rem,12vw,7rem);margin:.4rem 0 1rem}.hero h1 em{color:#E8B9B3;font-style:italic}.hero .btn{--accent:#E8B9B3;--on:#3A2622}
+.cd{display:flex;justify-content:center;gap:clamp(.6rem,3vw,1.6rem);margin:2rem 0}.cd div{min-width:64px}.cd b{display:block;font:500 clamp(2.2rem,8vw,3.6rem)/1 'Cormorant Garamond',serif}.cd span{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;opacity:.7}
+.letter{max-width:660px;margin:0 auto;background:#fff;border:1px solid #ecd9d2;border-radius:16px;padding:clamp(1.6rem,5vw,3rem);text-align:center}.letter h2{margin-bottom:1.2rem}.letter p{font-family:'Cormorant Garamond',serif;font-size:1.35rem;line-height:1.6}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:2rem}.gal div{aspect-ratio:1;border-radius:14px;display:grid;place-items:center;color:#fff;font-family:'Cormorant Garamond',serif;font-size:1.2rem;text-align:center;padding:.5rem}
+.gal div:nth-child(1){background:#C98B8F}.gal div:nth-child(2){background:#B5646B}.gal div:nth-child(3){background:#D8B88A;color:#3A2622}.gal div:nth-child(4){background:#8C5560}.gal div:nth-child(5){background:#E3B8A5;color:#3A2622}.gal div:nth-child(6){background:#A9525B}
+.alt{background:#F4E4DC;text-align:center}.sur{max-width:600px;margin:2rem auto 0;background:#fff;border-radius:16px;padding:2rem;border:1px solid #ecd9d2;display:none}.sur.on{display:block}.sur h3{font-size:2rem;margin-bottom:.8rem}.sur li{margin:.4rem 0;list-style:none;font-size:1.05rem}
+.c{position:absolute;top:-12px;width:8px;height:12px;opacity:.9;animation:fall linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
+@media(max-width:600px){.gal{grid-template-columns:1fr 1fr}}</style></head><body>
+<div class="demo"><span>Demonstration project by Maity DigiWorks. Not a real business.</span><a href="index.html#portfolio">&larr; Back to portfolio</a></div>
+<section class="hero" id="top"><p class="eyebrow">A little website, made just for you</p><h1>Happy Birthday,<br><em>Aanya</em></h1><p class="muted">Counting down to the big day (demo countdown)</p>
+<div class="cd" role="timer" aria-live="off"><div><b id="d">0</b><span>Days</span></div><div><b id="h">0</b><span>Hours</span></div><div><b id="m">0</b><span>Minutes</span></div><div><b id="s">0</b><span>Seconds</span></div></div><a class="btn" href="#note">Read your message</a></section>
+<section class="sec rv" id="note"><div class="wrap"><div class="letter"><h2>A message for you</h2><p>Every year with you is a reason to celebrate. Thank you for the laughter, the quiet moments and everything in between. May this year be as warm and bright as you make every room.</p><p><em>With love</em></p></div></div></section>
+<section class="sec rv" style="padding-top:0"><div class="wrap"><h2 style="text-align:center">Our moments</h2><p class="muted" style="text-align:center">Your own photos replace these placeholders.</p><div class="gal"><div>Photo 1</div><div>Photo 2</div><div>Photo 3</div><div>Photo 4</div><div>Photo 5</div><div>Photo 6</div></div></div></section>
+<section class="sec alt rv"><div class="wrap"><h2>One more thing</h2><p class="muted">Tap to open your surprise.</p><button class="btn" id="open" type="button" aria-expanded="false" aria-controls="sur">Open your surprise</button>
+<div class="sur" id="sur"><h3>Three wishes for you</h3><ul><li>May your days be full of simple joys.</li><li>May every plan you make find its way to you.</li><li>May this year be your best one yet.</li></ul></div></div></section>
+<section class="cta"><h2>Want a website like this?</h2><p>Tell us about your idea and we'll design one for you.</p><a class="btn" href="https://wa.me/918100229106?text=Hi%20Maity%20DigiWorks%2C%20I%20saw%20your%20birthday%20demo%20website%20and%20I%27d%20like%20something%20similar." target="_blank" rel="noopener">Message Maity DigiWorks</a></section>
+<script>document.documentElement.classList.add('js');
+if('IntersectionObserver'in window){const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.1});document.querySelectorAll('.rv').forEach(r=>io.observe(r))}else document.querySelectorAll('.rv').forEach(r=>r.classList.add('in'));
+const T=new Date();T.setDate(T.getDate()+30);T.setHours(0,0,0,0);
+function tick(){let x=Math.max(0,T-new Date());const v=[864e5,36e5,6e4,1e3];['d','h','m','s'].forEach((id,i)=>{document.getElementById(id).textContent=Math.floor(x/v[i]);x%=v[i]})}tick();setInterval(tick,1000);
+const o=document.getElementById('open'),S=document.getElementById('sur');
+o.onclick=()=>{S.classList.add('on');o.setAttribute('aria-expanded','true');o.hidden=true;if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;const h=document.querySelector('.alt'),cs=['#B5646B','#D8B88A','#E3B8A5'];h.style.position='relative';h.style.overflow='hidden';for(let i=0;i<40;i++){const c=document.createElement('i');c.className='c';c.style.left=Math.random()*100+'%';c.style.background=cs[i%3];c.style.animationDuration=(2+Math.random()*2)+'s';c.style.animationDelay=Math.random()+'s';h.appendChild(c);setTimeout(()=>c.remove(),5000)}};</script></body></html>
